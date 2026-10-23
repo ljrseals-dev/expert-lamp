@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neural-compressor"
+version = "0.2.0"
+description = "Distillation harness for a neural compressor that imitates a classical feed-forward compressor."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+  "torch>=2.1",
+  "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-timeout>=2.1"]
+
+[project.scripts]
+neural-compressor-train = "training.train:main"
+
+[tool.setuptools]
+packages = ["model", "training"]
+
+[tool.pytest.ini_options]
+timeout = 300
+addopts = "-q"
+testpaths = ["tests"]
