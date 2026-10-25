@@ -1,3 +1,9 @@
+Copyright © 2026 Lewis James Seals Jr. All rights reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT.
+
 # Neural Compressor — distillation harness
 
 **This is a distillation harness, not evidence that a neural compressor is better
